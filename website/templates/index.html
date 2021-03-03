@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156450678-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156450678-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We push ourselves. We push technology. And we push the boundaries of conventional thinking.">
+    <meta name="author" content="">
+    <title>Home |Akilinn</title>
+    {% include 'static.html'%}
+</head><!--/head-->
+
+<body>
+    {% include 'header.html'%}
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>Building a better world</h1>
+                        <p>Whatever the problem,we want to be part of the solution.</p>
+                        <a href="#banner" class="btn btn-common">Learn more</a>
+                    </div>
+                    <img src="{%static 'images/home/slider/hill.png'%}" class="slider-hill" alt="slider image">
+                    <img src="{%static 'images/home/slider/house.png'%}" class="slider-house" alt="slider image">
+                    <img src="{%static 'images/home/slider/sun.png'%}" class="slider-sun" alt="slider image">
+                    <img src="{%static 'images/home/slider/birds1.png'%}" class="slider-birds1" alt="slider image">
+                    <img src="{%static 'images/home/slider/birds2.png'%}" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div  id='banner'  class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="{%static 'images/home/rocket.png'%}" alt="rocket">
+                        </div>
+                        <h2>Innovative</h2>
+                        <p>We’re an innovative company focused on creating elegant solutions to solve complex problems.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="{%static 'images/home/technology.jpeg'%}" alt="technology">
+                        </div>
+                        <h2>Superior Technology</h2>
+                        <p>We use the best technology to explore every possible means for the solution of a problem in an elegant and celebrated way.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="{%static 'images/home/sustainable.jpg'%}" alt="sustainability">
+                        </div>
+                        <h2>Sustainable solutions</h2>
+                        <p>We are at the forefront in taking action, all our solutions to problems are kinder to people and the planet hence taking care of our environment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">What makes us different ?</h1>
+                            <p>From the way we structure our teams to the way we approach each project, our own expertise guides everything we do.</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="/about" class="btn btn-common">TAKE A TOUR</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="{%static 'images/home/experienced.jpg'%}" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Experienced and Enthusiastic</h2>
+                        <P>We are a team of young, vibrant, ambitious but experienced professionals who deal with everything by solving worlwide problem one by one especially using information communication technologies (ICT). In addition, we have the ability to update with the latest trends and requirements of our esteemed clients.</P>
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>professional</h2>
+                        <P>At Akilinn all our teams are Digital. Cultural. Procedural and  Professional. We can transform anything. We do it through love—love for the work, love for our clients, and love for each other.</P>
+                    </div>
+                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="{%static 'images/home/professional.jpg'%}" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="{%static 'images/home/enthusiastic.jpg'%}" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Solution Oriented</h2>
+                        <P> For us problems are nothing but wake-up calls for creativity we provide the right solution to the right problem.Each problem that we solve becomes a rule, which served afterwards to solve other problems.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--/#features-->
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <p><img src="{%static 'images/home/clients.png'%}" class="img-responsive" alt=""></p>
+                        <h1 class="title">Our core Values</h1>
+                        <p>These are our core values</p>
+                    </div>
+                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="{%static 'images/home/sustainability.jpg'%}" class="img-responsive" alt="sustainability"></a>
+                        </div>
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="{%static 'images/home/transparency.jpg'%}" class="img-responsive" alt="Transparency"></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="{%static 'images/home/efficient_process.jpg'%}" class="img-responsive" alt="Efficient Process"></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="{%static 'images/home/gender_equality.jpg'%}" class="img-responsive" alt="Gender Equality"></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="{%static 'images/home/teamwork.jpeg'%}" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="{%static 'images/home/collaboration.jpeg'%}" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--/#clients-->
+     {% include 'footer.html'%}
+     {% include 'javascript.html'%}  
+</body>
+</html>

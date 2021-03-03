@@ -1,0 +1,63 @@
+{% load static %}
+<footer id="footer">
+{% for objects in contact_info %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="{%static 'images/home/under.png'%}" class="img-responsive inline" alt="">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="testimonial bottom">
+                    <h1><img src="{%static 'images/logo_big.png'%}" alt="Akilinn"></h1>
+                    <div class="media">
+                            <div >
+                                We are  Team of committed tech enthusiast who specialize in latest technologies.We uphold Full transparency & live access to project monitoring to keep you in loop
+                            </div> 
+                    </div>        
+                </div> 
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="contact-info bottom">
+                    <h2>Contacts</h2>
+                        <p>E-mail:  <a href="mailto:{{objects.Email}}">{{objects.Email}}</a> <br></p> 
+                        <p>Phone:  {{objects.Phone}}<br></p> 
+                        <p>P.O Box: {{objects.Post_Box}}<br></p> 
+                    <h2>Address</h2>
+                    <address>
+                    {{objects.Address|safe}}
+                    </address>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="media-body">
+                                Akilinn is a company whose sole aim is identifying a problem affecting the world and coming up with needed solution
+                                to solve the problem which include starting and funding a group or a company which is best suited to handle the problem
+                                No matter the industry, complexity or time difference. Before we start the solution process, we carefully analyze the problem
+                                to ensure a top class solution delivery that will meet the demand and expectations.
+                            </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="copyright-text text-center">
+                    <p>&copy; Akilinn 2020.All rights reserved </p>
+                    <p>Designed by <a  href="http://www.ambeant.com" style='color:red;'>Ambeant : Beyond . . .</a></p>
+                </div> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 overflow">
+                            <div class="social-icons pull-right">
+                                <ul class="nav nav-pills">
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor%}    
+    </div>
+</footer>
+<!--/#footer-->

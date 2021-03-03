@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156450678-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156450678-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Every generation has a moment when it leaps into the future.Our subsidiaries efficiently speciallize on different problem domains">
+    <meta name="author" content="">
+    {% include 'static.html'%}
+</head><!--/head-->
+
+<body>
+    {% include 'header.html'%}
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Our Subsidiaries</h1>
+                            <p>At the heart of every success, lie our subsidiary companies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+
+    <section id="portfolio-information" class="padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="{%static '/images/subsidiaries/hierachy.jpg'%}" class="img-responsive" alt="hierarchy">
+                </div>
+                <div class="col-sm-6">
+                    <div class="project-name overflow">
+                        <h2 class="bold">Brand Recognition </h2>
+                    </div>
+                    <div class="project-info overflow">
+                        <p>Akilinn organizes subsidiaries to keep while keeping its  brand identities separate. This allows each brand to maintain its established goodwill with customers and vendor relationships. Subsidiaries are often used in acquisitions where Akilinn intends to keep the target company's name and culture. Subsidiaries  also helps Akilinn to  position part of its business as an alternative to the parent company at a different price point.Some of services conducted by Akilinn to its subsidiaries are:</p>
+                        <ul class="elements">
+                            <li><i class="fa fa-angle-right"></i> Initial Branding and Marketing</li>
+                            <li><i class="fa fa-angle-right"></i> Business environment setup</li>
+                            <li><i class="fa fa-angle-right"></i> Market analysis and business planning</li>
+                            <li><i class="fa fa-angle-right"></i> Hiring and training of staff</li>
+                            <li><i class="fa fa-angle-right"></i> Provision of Quality control frameworks</li>
+                            <li><i class="fa fa-angle-right"></i> Ethical and legal advice</li>
+                        </ul>
+                    </div>
+                    <div class="client overflow">
+                        <h3>Akilinn Mark of distinction</h3>
+                        <ul class="nav navbar-nav navbar-default">
+                            <li><a href="#"><i class="fa fa-bolt"></i>By Akilinn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--/#portfolio-information-->
+
+    <section id="related-work" class="padding-top padding-bottom">
+        <div class="container">
+            <div class="row">
+                <h1 class="title text-center">Akilinn Subsidiaries</h1>
+                {% for objects in subsidiaries %}
+                <div class="col-sm-3">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-single">
+                            <div class="portfolio-thumb">
+                               <a href="{{objects.Url}}"> <img src="{{objects.Image.url}}" class="img-responsive" alt="{{objects.Name}}"></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info ">
+                            <h2>{{objects.Name}}</h2>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!--/#related-work-->
+    {% include 'footer.html'%} 
+    {% include 'javascript.html'%} 
+</body>
+</html>
